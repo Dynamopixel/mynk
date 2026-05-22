@@ -1,0 +1,187 @@
+.wellness-section {
+  background: #000000;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+}
+
+.wellness-heading {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+
+.wellness-cards-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+
+.wellness-card-col {
+  display: flex;
+  flex: 1;
+  padding: 0;
+}
+
+
+.wellness-card {
+  background: #1c1c1c;
+  border: 1px solid #2a2a2a;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  position: relative;
+}
+
+
+.wellness-card.other-card {
+  border-right: none;
+  clip-path: polygon(0 0, 92% 0, 100% 100%, 0 100%);
+}
+
+
+.wellness-card.mynk-card {
+  border-left: none;
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.card-brand {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.card-brand.mynk {
+  text-align: right;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-list-item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #2a2a2a;
+  color: #ccc;
+}
+
+.card-list-item:last-child {
+  border-bottom: none;
+}
+
+.card-list-item p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+
+.icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+
+.vs-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.vs-badge {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  background: #000;
+  border: 2px solid #979797;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -1.7rem;
+}
+
+
+@media (max-width: 600px) {
+
+  .wellness-section {
+    padding: 2.5rem 2rem;
+
+  }
+
+  .wellness-heading {
+    font-size: 1.6rem;
+  }
+
+  /* STACK LAYOUT */
+  .wellness-cards-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .wellness-card-col {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  /* REMOVE CLIP PATH (VERY IMPORTANT) */
+  .wellness-card.other-card,
+  .wellness-card.mynk-card {
+    clip-path: none;
+  }
+
+  /* CLEAN CARDS */
+  .wellness-card {
+    border-radius: 1rem;
+  }
+
+  /* VS FIX */
+  .vs-col {
+    order: 2;
+    margin: 0;
+  }
+
+  .vs-badge {
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    background: #000;
+    border: 2px solid #979797;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -1.7rem;
+    left: 240px;
+    top: 260px;
+}
+
+  .card-brand {
+    font-size: 1.3rem;
+  }
+
+  .card-list-item p {
+    font-size: 0.95rem;
+  }
+}

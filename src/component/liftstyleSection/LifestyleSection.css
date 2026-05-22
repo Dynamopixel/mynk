@@ -1,0 +1,104 @@
+.lifestyle-section {
+    background: #000;
+    padding: 100px 50px;
+
+}
+
+.lifestyle-heading {
+    font-size:4rem;
+
+    color: #fff;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom:2.5rem;
+}
+
+.lifestyle-stats {
+    gap: 10px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stat-value h3{
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #E6A817;
+    line-height: 1;
+}
+
+.stat-value h3 span {
+    font-size: 2rem !important;
+}
+
+
+.align-items-start {
+    align-items: flex-start!important;
+    gap: 30px;
+    
+}
+.lifestyle-right img {
+    width: 400px !important;
+}
+
+.stat-label {
+    font-size: 1.3rem;
+    color: #d4d4d4;
+}
+
+.stat-divider {
+    width: 1px;
+    height: clamp(38px, 4vw, 52px);
+    background: rgba(255, 255, 255, 0.12);
+    align-self: center;
+}
+
+.lifestyle-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+@media (max-width: 768px) {
+    .lifestyle-section {
+        padding: 75px 50px 40px 50px;
+    }
+
+    .lifestyle-stats {
+        text-align: center;
+        align-items: center;
+        margin: 30px 0px;
+        gap: 18px;
+    }
+
+    .ring-img {
+    max-width: 400px !important;
+    margin: 0 auto;
+}
+    .align-items-start {
+    align-items: flex-start!important;
+    display: flex;
+    justify-content: space-between;
+}
+
+    h2.lifestyle-heading {
+        text-align: center;
+    }
+   .stat-value {
+    font-size: 2.5rem !important;
+    font-weight: 900;
+    color: #E6A817;
+    line-height: 1;
+    margin-top: 30px;
+}
+.stat-label {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+}

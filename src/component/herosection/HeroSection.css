@@ -1,0 +1,331 @@
+.hero-section {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem 15rem 8rem 2rem;
+    overflow: hidden;
+}
+
+/* =========================
+   RIGHT CONTENT
+========================= */
+
+.hero-content {
+  width: 100%;
+  max-width: 34rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 4.2rem;
+  line-height: 0.95;
+  font-weight: 900;
+  color: #000;
+text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.hero-desc {
+  font-size: 1.4rem;
+  line-height: 1.5;
+text-align: center;
+  color: #5b5b5b;
+  margin-bottom: 1.8rem;
+}
+
+.review-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+
+}
+
+.star {
+  color: #f6b530;
+}
+
+.growth {
+  color: #2fc14f;
+}
+
+.badge-divider {
+  width: 1px;
+  height: 0.9rem;
+
+  background: rgba(0,0,0,0.15);
+}
+
+/* =========================
+   PRICE
+========================= */
+
+.price-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 0.9rem;
+
+  margin-bottom: 2rem;
+}
+
+.new-price {
+  font-size: 2.8rem;
+  font-weight: 800;
+
+  color: #000;
+}
+
+.old-price {
+  font-size: 1.8rem;
+
+  color: #666;
+
+  text-decoration: line-through;
+}
+
+.discount-badge {
+  background: #49d248;
+
+  padding: 0.35rem 0.8rem;
+
+  border-radius: 0.5rem;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.sold-badge {
+  background: #d7a14d;
+
+  padding: 0.35rem 0.9rem;
+
+  border-radius: 999px;
+
+  font-size: 0.9rem;
+}
+
+/* =========================
+   COLORS
+========================= */
+
+.color-row {
+  display: flex;
+  align-items: center;
+
+  gap: 0.8rem;
+
+  margin-bottom: 0.7rem;
+}
+
+.color {
+  width: 2.8rem;
+  height: 2.8rem;
+
+  border-radius: 0.5rem;
+
+  background: #000;
+
+  border: 2px solid transparent;
+}
+
+.color.active {
+  border-color: #f0b44c;
+}
+
+.color.silver {
+  background: #d6c8b7;
+}
+
+.color.gray {
+  background: #a9a9a9;
+}
+
+.shipping-text {
+  font-size: 0.95rem;
+  color: #666;
+
+  margin-bottom: 1.7rem;
+}
+
+/* =========================
+   SIZE
+========================= */
+
+.size-top {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 1rem;
+}
+
+.size-guide {
+  text-decoration: underline;
+  color: #666;
+}
+
+.size-row {
+  display: flex;
+  align-items: center;
+
+  gap: 0.7rem;
+
+  margin-bottom: 2rem;
+}
+
+.size-btn {
+  width: 3.3rem;
+  height: 3.3rem;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #ddd;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.size-btn.active {
+  border: 2px solid #000;
+  background: #fff;
+}
+
+.size-btn.disabled {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.hero-btn {
+  width: 100%;
+  height: 4rem;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #c89d58;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  color: #000;
+}
+
+/* =========================
+   992px
+========================= */
+
+@media (max-width: 992px) {
+
+  .hero-section {
+    justify-content: center;
+
+    padding: 4rem 2rem;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .size-top {
+    max-width: 25rem;
+  }
+
+  .hero-title {
+    font-size: 3.3rem;
+  }
+
+  .hero-desc {
+    font-size: 1.15rem;
+  }
+}
+
+/* =========================
+   570px
+========================= */
+
+@media (max-width: 570px) {
+
+  .hero-section {
+    padding: 3rem 1.2rem;
+    min-height: auto;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .review-badge {
+    font-size: 0.82rem;
+  }
+
+  .new-price {
+    font-size: 2rem;
+  }
+
+  .old-price {
+    font-size: 1.2rem;
+  }
+
+  .size-btn {
+    width: 2.7rem;
+    height: 2.7rem;
+
+    font-size: 0.95rem;
+  }
+
+  .hero-btn {
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* =========================
+   370px
+========================= */
+
+@media (max-width: 370px) {
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-desc {
+    font-size: 0.9rem;
+  }
+
+  .size-row {
+    gap: 0.5rem;
+  }
+
+  .size-btn {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    font-size: 0.85rem;
+  }
+}

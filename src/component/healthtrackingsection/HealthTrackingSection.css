@@ -1,0 +1,209 @@
+.health-section {
+  background: #000;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ── TITLE ── */
+.health-heading {
+  font-size: 3.5rem;
+
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 3rem;
+}
+
+/* ── MAIN ROW ── */
+.health-main-row {
+  position: relative;
+}
+
+/* ── SIDE RINGS ── */
+.ring-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.ring-side-img {
+  width: 100%;
+  max-width: 130px;
+  object-fit: contain;
+}
+
+img.ring-side-img.ring-left-img {
+    position: absolute;
+    left: -288px;
+    top: -224px;
+    transform: rotate(-15deg);
+    width: 79% !important;
+    max-width: none !important;
+    width: 22% !important;
+}
+
+img.ring-side-img.ring-right-img {
+    position: absolute;
+    right: -290px;
+    bottom: 0;
+    transform: rotate(-15deg);
+    width: 79% !important;
+    max-width: none !important;
+    width: 22% !important;
+}
+
+/* ── FEATURES ── */
+.features-col {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.feature-item-left {
+  align-items: center;
+}
+
+.feature-item-right {
+  align-items: center;
+}
+
+.feature-icon-wrap {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.feature-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.health-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  white-space: pre-line;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ── MOCKUP ── */
+.mockup-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features-col {
+    display: flex;
+    gap: 70px;
+}
+.mockup-img {
+  width: 100%;
+  max-width: 320px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/* ── TABLET (768px - 991px) ── */
+@media (max-width: 991px) {
+  .health-heading {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .features-col {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .features-left {
+    order: 1;
+  }
+
+  .mockup-col {
+    order: 2;
+  }
+
+  .features-right {
+    order: 3;
+  }
+
+  .mockup-img {
+    max-width: 280px;
+    margin: 1.5rem auto;
+  }
+}
+
+/* ── MOBILE (max 767px) ── */
+@media (max-width: 767px) {
+  .health-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .health-heading {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .features-col {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .features-left {
+    order: 2;
+    margin-top: 1.5rem;
+  }
+
+  .mockup-col {
+    order: 1;
+  }
+
+  .features-right {
+    order: 3;
+    margin-top: 1.5rem;
+  }
+
+  .mockup-img {
+    max-width: 220px;
+  }
+
+  .feature-icon-wrap {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .feature-icon {
+    font-size: 1.1rem;
+  }
+
+  .feature-title {
+    font-size: 0.85rem;
+  }
+}

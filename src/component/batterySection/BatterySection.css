@@ -1,0 +1,128 @@
+.battery-section {
+  width: 100%;
+  padding: 70px 0;
+  background: #000;
+  overflow: hidden;
+}
+
+.battery-row {
+  min-height: 500px;
+}
+
+/* LEFT IMAGE */
+.battery-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.charger-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* RIGHT CONTENT */
+.battery-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end ;
+  align-items: flex-start;
+}
+
+.battery-title {
+  font-size: 3.5rem;
+
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.battery-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #111;
+  border: 1px solid #333;
+  padding: 14px 22px;
+  border-radius: 50px;
+}
+
+.battery-icon {
+  font-size: 20px;
+}
+
+.battery-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 991px) {
+  .battery-section {
+    padding: 60px 0;
+  }
+
+  .battery-title {
+    font-size: 2.3rem;
+  }
+
+  .charger-img {
+    max-width: 420px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .battery-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .battery-right {
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+ .battery-title {
+    font-size: 2.7rem;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+  .battery-badge {
+    padding: 12px 18px;
+  }
+
+  .battery-text {
+    font-size: 16px;
+  }
+
+  .charger-img {
+    max-width: 700px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .battery-section {
+    padding: 50px 0;
+  }
+
+  .battery-title {
+    font-size: 28px;
+  }
+
+  .battery-text {
+    font-size: 14px;
+  }
+
+  .charger-img {
+    max-width: 240px;
+  }
+}

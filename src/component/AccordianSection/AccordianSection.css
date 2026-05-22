@@ -1,0 +1,138 @@
+.product-spec-section {
+  background: #000;
+  padding-top: 30px ;
+  color: #fff;
+}
+
+.product-spec-card {
+    background: #0f0f0f;
+    border-radius: 18px;
+    padding: 50px;
+    border: 1px solid rgb(255 255 255 / 16%);
+}
+
+/* HEADER */
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.product-header h2 {
+  font-size: 2rem;
+
+}
+
+.close-icon {
+  font-size: 26px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.custom-accordion .accordion-item {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+
+.custom-accordion .accordion-button {
+  background: transparent;
+  color: #fff;
+  font-size: 2rem;
+margin-bottom: 10px;
+  padding: 18px 0;
+  box-shadow: none;
+}
+
+.custom-accordion .accordion-button::after {
+  filter: invert(1);
+  transform: scale(0.85);
+}
+
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  background: transparent;
+  color: #fff;
+}
+
+/* BODY */
+.custom-accordion .accordion-body {
+  padding: 0 0 18px 0;
+  color: rgba(255,255,255,0.8);
+}
+
+/* SPEC GRID */
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.spec-col p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.spec-col b {
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .spec-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .spec-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-spec-card {
+    padding: 18px;
+  }
+
+  .product-header h2 {
+    font-size: 22px;
+  }
+
+  .custom-accordion .accordion-button {
+    font-size: 15px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 370px) {
+
+  .product-spec-card {
+    padding: 12px !important;
+  }
+
+  .product-header h2 {
+    font-size: 18px;
+  }
+
+  .close-icon {
+    font-size: 22px;
+  }
+
+  .custom-accordion .accordion-button {
+    font-size: 14px;
+    padding: 14px 0;
+  }
+
+  .spec-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .spec-col p {
+    font-size: 12.5px;
+    line-height: 1.6;
+  }
+}

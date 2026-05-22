@@ -1,0 +1,144 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+/* =========================
+   ROOT COLORS
+========================= */
+
+:root{
+    --primary-bg: #000000;
+    --secondary-bg: #0d0d0d;
+    --card-bg: #111111;
+    --border-color: #232323;
+
+    --gold: #d6a354;
+    --gold-hover: #ebb96b;
+
+    --text-white: #ffffff;
+    --text-light: #cfcfcf;
+    --text-gray: #8d8d8d;
+
+    --green: #00d26a;
+    --red: #ff4d4d;
+}
+
+
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--primary-bg);
+    color: var(--text-white);
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.section-padding{
+    padding: 100px 0;
+}
+
+
+
+h1, h2, h3, h4, h5{
+     font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+
+
+.primary-btn{
+    background: var(--gold);
+    color: #000;
+    border: none;
+    padding: 14px 34px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.primary-btn:hover{
+    background: var(--gold-hover);
+    transform: translateY(-2px);
+}
+
+.secondary-btn{
+    background: transparent;
+    border: 1px solid #444;
+    color: white;
+    padding: 14px 34px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.secondary-btn:hover{
+    border-color: white;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.custom-card{
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 28px;
+    padding: 30px;
+    transition: 0.3s ease;
+}
+
+.custom-card:hover{
+    border-color: var(--gold);
+    transform: translateY(-5px);
+}
+
+
+.icon-box{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(214,163,84,0.15);
+    color: var(--gold);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+}
+
+
+.glow-effect{
+    box-shadow: 0 0 60px rgba(214,163,84,0.15);
+}
+
+
+.hero-image{
+    width: 100%;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+@media (max-width: 370px){
+     container{
+        padding: 40px 15px;
+     }
+}
