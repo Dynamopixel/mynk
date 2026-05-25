@@ -89,6 +89,11 @@ margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
+  .product-spec-section {
+  background: #000;
+  padding-top: 30px ;
+  color: #fff;
+}
   .spec-grid {
     grid-template-columns: 1fr;
   }

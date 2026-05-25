@@ -78,7 +78,7 @@
 
 @media (max-width: 575px) {
     .faq-wrap {
-        padding: 34px 0;
+        padding: 34px 20px;
     }
 
     .faq-title {

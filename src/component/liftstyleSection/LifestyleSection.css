@@ -65,8 +65,12 @@
 
 @media (max-width: 768px) {
     .lifestyle-section {
-        padding: 75px 50px 40px 50px;
+        padding: 75px 40px 60px 40px;
     }
+    .lifestyle-heading {
+    text-align: left;
+    font-size: 2.5rem;
+}
 
     .lifestyle-stats {
         text-align: center;
@@ -75,9 +79,8 @@
         gap: 18px;
     }
 
-    .ring-img {
-    max-width: 400px !important;
-    margin: 0 auto;
+   .lifestyle-right img {
+    width: 290px !important;
 }
     .align-items-start {
     align-items: flex-start!important;
@@ -85,15 +88,11 @@
     justify-content: space-between;
 }
 
-    h2.lifestyle-heading {
-        text-align: center;
-    }
-   .stat-value {
-    font-size: 2.5rem !important;
+   .stat-value h3 {
+    font-size: 1.5rem;
     font-weight: 900;
     color: #E6A817;
     line-height: 1;
-    margin-top: 30px;
 }
 .stat-label {
     font-size: 13px;
