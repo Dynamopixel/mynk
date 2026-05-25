@@ -3,20 +3,18 @@ import "./HeroSection.css";
 
 import heroImg from "../../assets/images/hero-banner.webp";
 import SizecardPopup from "../SizecardPopup/SizecardPopup";
+import EnquiryPopup from "../EnquiryForm/EnquiryPopup";
 import { TbRulerMeasure } from "react-icons/tb";
 
-
 const HeroSection = () => {
-
-  const [showPopup, setShowPopup] = useState(false);
+  const [showSizePopup, setShowSizePopup] = useState(false);
+  const [showEnquiryPopup, setShowEnquiryPopup] = useState(false);
 
   return (
     <>
       <section
         className="hero-section"
-        style={{
-          backgroundImage: `url(${heroImg})`,
-        }}
+        style={{ backgroundImage: `url(${heroImg})` }}
       >
         <div className="hero-content">
 
@@ -25,8 +23,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="hero-desc">
-            India’s lightest health ring with BP, sleep &
-            heart rate tracking just 4 gm.
+            India’s lightest health ring with BP, sleep & heart rate tracking just 4 gm.
           </p>
 
           <div className="review-badge">
@@ -41,16 +38,9 @@ const HeroSection = () => {
 
           <div className="price-row">
             <span className="new-price">₹ 6,499</span>
-
             <span className="old-price">₹ 12,999</span>
-
-            <span className="discount-badge">
-              50% off
-            </span>
-
-            <span className="sold-badge">
-              Sold out
-            </span>
+            <span className="discount-badge">50% off</span>
+            <span className="sold-badge">Sold out</span>
           </div>
 
           <div className="color-row">
@@ -63,14 +53,15 @@ const HeroSection = () => {
             Shipping calculated at checkout.
           </p>
 
+          {/* SIZE GUIDE */}
           <div className="size-top">
             <span>Available Size</span>
 
             <span
               className="size-guide"
-              onClick={() => setShowPopup(true)}
+              onClick={() => setShowSizePopup(true)}
             >
-             <TbRulerMeasure />  Sizing Guide
+              <TbRulerMeasure /> Sizing Guide
             </span>
           </div>
 
@@ -83,21 +74,25 @@ const HeroSection = () => {
             <button className="size-btn">12</button>
           </div>
 
-          <button className="hero-btn">
+          {/* ENQUIRY BUTTON */}
+          <button
+            className="hero-btn"
+            onClick={() => setShowEnquiryPopup(true)}
+          >
             Quick Enquiry
           </button>
 
         </div>
       </section>
 
-      {/* Popup */}
-      {showPopup && (
+      {/* ================= SIZE POPUP ================= */}
+      {showSizePopup && (
         <div className="popup-overlay">
           <div className="popup-content">
 
             <button
               className="close-btn"
-              onClick={() => setShowPopup(false)}
+              onClick={() => setShowSizePopup(false)}
             >
               ×
             </button>
@@ -106,8 +101,15 @@ const HeroSection = () => {
 
           </div>
         </div>
-      )
-      }
+      )}
+
+      {/* ================= ENQUIRY POPUP ================= */}
+      {showEnquiryPopup && (
+        <EnquiryPopup
+          isOpen={showEnquiryPopup}
+          onClose={() => setShowEnquiryPopup(false)}
+        />
+      )}
     </>
   );
 };

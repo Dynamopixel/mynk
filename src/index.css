@@ -6,28 +6,6 @@
 
 
 /* =========================
-   ROOT COLORS
-========================= */
-
-:root{
-    --primary-bg: #000000;
-    --secondary-bg: #0d0d0d;
-    --card-bg: #111111;
-    --border-color: #232323;
-
-    --gold: #d6a354;
-    --gold-hover: #ebb96b;
-
-    --text-white: #ffffff;
-    --text-light: #cfcfcf;
-    --text-gray: #8d8d8d;
-
-    --green: #00d26a;
-    --red: #ff4d4d;
-}
-
-
-/* =========================
    GLOBAL
 ========================= */
 
@@ -41,7 +19,7 @@ body{
     background: var(--primary-bg);
     color: var(--text-white);
     overflow-x: hidden;
-    background-color: #000;
+    background-color: #d5d7d4;
 }
 
 a{

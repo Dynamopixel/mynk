@@ -1,6 +1,4 @@
-/* =========================
-   TOP STRIP
-========================= */
+
 
 .top-strip {
   width: 100%;
@@ -27,29 +25,31 @@
   padding: 0 10px;
 }
 
-/* =========================
-   MAIN NAVBAR
-========================= */
-
-.main-navbar {
-  background: #000;
-
-  padding: 0;
-
-  border-bottom: 1px solid #111;
-
-  min-height: 80px;
-
-  display: flex;
-  align-items: center;
-
-  position: relative;
-  z-index: 999;
+.hero-section {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem 15rem 8rem 2rem;
+    overflow: hidden;
+    margin-top: -81px;
 }
 
-/* =========================
-   CONTAINER
-========================= */
+
+.main-navbar {
+    
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+
+
 
 .main-navbar .container-lg {
   position: relative;
@@ -59,9 +59,6 @@
   justify-content: space-between;
 }
 
-/* =========================
-   LOGO
-========================= */
 
 .brand-center {
   position: absolute;
@@ -80,9 +77,6 @@
   cursor: pointer;
 }
 
-/* =========================
-   LEFT NAV
-========================= */
 
 .nav-left .nav-link {
   color: #cfcfcf !important;
@@ -95,9 +89,6 @@
   padding: 0;
 }
 
-/* =========================
-   RIGHT NAV
-========================= */
 
 .nav-right {
   align-items: center;
@@ -152,140 +143,34 @@
   height: 1.8rem;
 }
 
-@media (min-width: 769px) {
+@media (max-width: 768px) {
 
-  .main-navbar {
-    padding: 18px 0;
-  }
-
-  /* LEFT NAV always visible */
-  .nav-left {
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  /* RIGHT NAV inline */
-  .nav-right {
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-    background: transparent;
-    padding: 0;
-    margin-top: 0;
-    width: auto;
-  }
-
-  /* ICONS inline */
-  .icons {
-    margin-top: 0;
-    margin-left: 15px;
-  }
-
-  /* REMOVE mobile collapse effect */
-  .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-    flex-grow: 0;
-  }
-
+  /* Hide everything except logo */
+  .nav-left,
+  .nav-right,
+  .icons,
   .navbar-toggler {
     display: none !important;
   }
-}
 
-
-
-@media (max-width: 768px) {
-
+  /* Center logo perfectly */
   .main-navbar {
-    min-height: 72px;
-    padding: 0 16px;
+    justify-content: center;
+    min-height: 70px;
+    padding: 0;
   }
 
-  /* LOGO */
   .brand-center {
     position: static;
     transform: none;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .brand-center img {
-    height: 48px;
+    height: 50px;
   }
 
-  /* LEFT MENU (IMPORTANT FIX) */
-  .nav-left {
-    display: flex !important;
-    gap: 16px;
-  }
-
-  .nav-left .nav-link {
-    color: #cfcfcf !important;
-    font-size: 14px;
-    margin-right: 0;
-    padding: 6px 0;
-  }
-
-  /* RIGHT MENU */
-  .nav-right {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    background: #000;
-    margin-top: 10px;
-    padding: 15px 16px;
-  }
-
-  .nav-right .nav-link {
-    padding: 10px 0;
-    margin-right: 0;
-    font-size: 1rem;
-  }
-
-  .icons {
-    margin-left: 0;
-    margin-top: 12px;
-    gap: 18px;
-    font-size: 1.35rem;
-  }
-}
-/* =========================
-   320px — 370px
-========================= */
-
-@media (max-width: 370px) {
-
-  .top-strip {
-    height: auto;
-
-    padding: 8px 10px;
-  }
-
-  .top-strip p {
-    font-size: 0.6rem;
-
-    line-height: 1.4;
-  }
-
-  .main-navbar {
-    min-height: 66px;
-
-    padding: 0 10px;
-  }
-
-  .brand-center img {
-    height: 42px;
-  }
-
-  .navbar-toggler-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  .icons {
-    font-size: 1.2rem;
+  .container-lg {
+    justify-content: center !important;
   }
 }

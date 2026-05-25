@@ -18,7 +18,7 @@ const Header = () => {
 
           {/* LEFT LINKS */}
           <Nav className="nav-left d-none d-lg-flex">
-            <Nav.Link href="#">Home</Nav.Link>
+            {/* <Nav.Link href="#">Home</Nav.Link> */}
            
           </Nav>
 
@@ -35,7 +35,7 @@ const Header = () => {
             <Nav className="ms-auto nav-right">
 
               <Nav.Link href="#" className="d-lg-none">Home</Nav.Link>
-              <Nav.Link href="#" className="d-lg-none">Combo</Nav.Link>
+              <Nav.Link href="#" className="d-lg-none">Comand and dimt amnd bo</Nav.Link>
 
               {/* <Nav.Link href="#">Contact</Nav.Link> */}
 
@@ -43,7 +43,7 @@ const Header = () => {
                 {/* <FiSearch />
                 <FiUser />
                 <FiShoppingBag /> */}
-                <Nav.Link href="#">Contact Us</Nav.Link>
+                {/* <Nav.Link href="#">Contact Us</Nav.Link> */}
               </div>
 
             </Nav>
