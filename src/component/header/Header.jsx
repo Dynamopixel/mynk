@@ -13,13 +13,13 @@ const Header = () => {
       </div>
 
       {/* MAIN NAVBAR */}
-      <Navbar expand="md" className="main-navbar">
+      <Navbar expand="lg" className="main-navbar">
         <Container fluid="lg">
 
           {/* LEFT LINKS */}
           <Nav className="nav-left d-none d-lg-flex">
             <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">Combo</Nav.Link>
+           
           </Nav>
 
           {/* LOGO CENTER */}
@@ -40,9 +40,10 @@ const Header = () => {
               {/* <Nav.Link href="#">Contact</Nav.Link> */}
 
               <div className="icons">
-                <FiSearch />
+                {/* <FiSearch />
                 <FiUser />
-                <FiShoppingBag />
+                <FiShoppingBag /> */}
+                <Nav.Link href="#">Contact Us</Nav.Link>
               </div>
 
             </Nav>

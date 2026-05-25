@@ -5,9 +5,6 @@
   overflow: hidden;
 }
 
-/* =========================
-   TITLE
-========================= */
 
 .testimonial-title {
   text-align: center;
@@ -17,9 +14,6 @@
   margin-bottom: 3rem;
 }
 
-/* =========================
-   SLIDER WRAPPER
-========================= */
 
 .testimonial-slider {
   display: flex;
@@ -30,9 +24,6 @@
   flex: 1 1 0;
 }
 
-/* =========================
-   CARD
-========================= */
 
 .testimonial-card {
   background: #111;
@@ -42,9 +33,6 @@
   height: 100%;
 }
 
-/* =========================
-   USER ROW
-========================= */
 
 .user-row {
   display: flex;
@@ -74,9 +62,6 @@
   margin-top: 0.2rem;
 }
 
-/* =========================
-   QUOTE
-========================= */
 
 .quote {
   font-size: 1.1rem;
@@ -84,9 +69,6 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* =========================
-   TRUST ROW
-========================= */
 
 .trust-row {
   margin-top: 3rem;
@@ -118,10 +100,6 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* =========================
-   993px+
-========================= */
-
 @media (min-width: 993px) {
 
   .testimonial-slider {
@@ -133,9 +111,6 @@
   }
 }
 
-/* =========================
-   769px - 992px
-========================= */
 
 @media (min-width: 769px) and (max-width: 992px) {
 
@@ -167,7 +142,14 @@
   .testimonial-section {
     padding: 4rem 1.2rem;
   }
-
+.trust-row {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    flex-wrap: wrap;
+}
   .testimonial-title {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -218,17 +200,12 @@
   .testimonial-slider {
     overflow-x: auto;
     overflow-y: hidden;
-
     display: flex;
     gap: 1rem;
-
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
-
     scrollbar-width: none;
-
-    /* IMPORTANT */
     padding-inline: 0.75rem;
     box-sizing: border-box;
   }
@@ -252,6 +229,14 @@
     padding: 1.2rem;
     box-sizing: border-box;
   }
+  .trust-row {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    flex-wrap: wrap;
+}
 }
 
 
@@ -322,9 +307,13 @@
   }
 
   .trust-row {
-    gap: 0.8rem;
-    margin-top: 2rem;
-  }
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    flex-wrap: wrap;
+}
 
   .trust-item {
     font-size: 0.75rem;

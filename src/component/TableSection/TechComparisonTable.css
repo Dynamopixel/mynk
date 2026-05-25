@@ -1,6 +1,4 @@
-/* =========================
-   SECTION
-========================= */
+
 
 .tech-table-section {
   background: #000;
@@ -16,9 +14,6 @@
   line-height: 1.15;
 }
 
-/* =========================
-   TABLE WRAPPER
-========================= */
 
 .custom-table-wrap {
   border-radius: 22px;
@@ -28,9 +23,7 @@
   background: #0b0b0b;
 }
 
-/* =========================
-   TABLE
-========================= */
+
 
 .custom-tech-table {
   margin: 0;
@@ -40,9 +33,7 @@
   table-layout: fixed;
 }
 
-/* =========================
-   HEADER
-========================= */
+
 
 .custom-tech-table thead th {
     background: #d89a45;
@@ -55,9 +46,6 @@
     vertical-align: middle;
 }
 
-/* =========================
-   BODY
-========================= */
 
 .custom-tech-table tbody td {
   background: #0b0b0b;
@@ -73,9 +61,6 @@
   background: #111;
 }
 
-/* =========================
-   FEATURE COLUMN
-========================= */
 
 .feature-cell {
   width: 42%;
@@ -83,9 +68,6 @@
   line-height: 1.4;
 }
 
-/* =========================
-   ICON + TEXT
-========================= */
 
 .cell-content {
   display: flex;
@@ -116,9 +98,7 @@
   flex-shrink: 0;
 }
 
-/* =========================
-   992px DOWN
-========================= */
+
 
 @media (max-width: 991px) {
 
@@ -143,10 +123,7 @@
   }
 }
 
-/* =========================
-   571px — 767px
-   NO SCROLLBAR
-========================= */
+
 
 @media (min-width: 571px) and (max-width: 767px) {
 
@@ -196,10 +173,6 @@
   }
 }
 
-/* =========================
-   570px AND BELOW
-   SCROLL ENABLE
-========================= */
 
 @media (max-width: 570px) {
 

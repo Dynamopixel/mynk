@@ -5,16 +5,42 @@ import Love from "../../assets/images/loveicon.png";
 import Android from "../../assets/images/app-icon.png";
 import Backup from "../../assets/images/backupicon.png";
 
+import { useEffect, useRef } from "react";
+
 import "./FeatureSection.css";
 
 const FeatureSection = () => {
+
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-ring");
+        } else {
+          entry.target.classList.remove("animate-ring");
+        }
+      },
+      { threshold: 0.4 }
+    );
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => {
+      if (imageRef.current) observer.unobserve(imageRef.current);
+    };
+  }, []);
+
   return (
     <section className="feature-section">
       <Container>
         <Row className="align-items-center gx-5">
 
           {/* LEFT */}
-          <Col lg={6} md={12} xs={12} className="feature-left">
+          <Col lg={6} md={7} xs={12} className="feature-left">
 
             <h2 className="feature-title">
               Track Heart Rate.<br />
@@ -63,8 +89,13 @@ const FeatureSection = () => {
           </Col>
 
           {/* RIGHT */}
-          <Col lg={6} md={12} xs={12} className="feature-right">
-            <img src={ringImg} alt="MYNK Ring" className="ring-img" />
+          <Col lg={6} md={5} xs={12} className="feature-right">
+            <img
+              src={ringImg}
+              alt="MYNK Ring"
+              className="ring-img"
+              ref={imageRef}
+            />
           </Col>
 
         </Row>

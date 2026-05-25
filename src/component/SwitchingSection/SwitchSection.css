@@ -76,7 +76,7 @@
 /* TABLET — 2 per row */
 @media (min-width: 769px) and (max-width: 992px) {
     .why-title {
-        font-size: clamp(1.8rem, 4vw, 2.4rem);
+        font-size: 3.2rem;
         margin-bottom: 40px;
     }
 
@@ -97,15 +97,21 @@
 
 /* MOBILE */
 @media (max-width: 768px) {
-    .why-section {
-        min-height: auto;
-    }
-
 
     .why-container {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
+    .why-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    overflow: hidden;
+    display: flex;
+
+}
 
     .why-title {
         font-size: 3rem;
@@ -116,7 +122,6 @@
         width: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
     }
 

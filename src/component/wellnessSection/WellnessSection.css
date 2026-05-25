@@ -159,7 +159,7 @@
     margin: 0;
   }
 
-  .vs-badge {
+.vs-badge {
     width: 4.4rem;
     height: 4.4rem;
     border-radius: 50%;
@@ -173,8 +173,8 @@
     align-items: center;
     justify-content: center;
     margin: 0 -1.7rem;
-    left: 240px;
-    top: 260px;
+    left: 260px;
+    top: 290px;
 }
 
   .card-brand {
