@@ -110,9 +110,9 @@
 
 
 @media (max-width: 480px) {
-  .battery-section {
-    padding: 50px 0;
-  }
+ .battery-section {
+    padding: 90px 30px 30px 30px;
+}
 
   .battery-title {
     font-size: 28px;
@@ -123,6 +123,6 @@
   }
 
   .charger-img {
-    max-width: 240px;
+    max-width: 450px;
   }
 }

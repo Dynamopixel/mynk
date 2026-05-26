@@ -199,18 +199,19 @@
 
 /* Mobile */
 @media (max-width: 575px) {
-    .feature-title {
-        font-size: 2rem;
-    }
+   .feature-title {
+    font-size: 2rem;
+    text-align: center;
+}
 
-    .feature-desc {
-        font-size: 1.1rem;
-    }
-
-    .feature-stats {
-        gap: 20px;
-    }
-
+   .feature-desc {
+    font-size: 1.1rem;
+    text-align: center;
+}
+.feature-stats {
+    gap: 50px;
+    justify-content: center;
+}
     .ring-img {
     max-width: 300px !important;
     margin-top: 2rem;
